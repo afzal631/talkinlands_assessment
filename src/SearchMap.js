@@ -23,17 +23,17 @@ function SearchMap() {
   const [loading, setLoading] = useState(false);
   const [userPosition, setUserPosition] = useState(null);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    if (search === "") {
-      alert("Please enter a search value");
-    }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   if (search === "") {
+  //     alert("Please enter a search value");
+  //   }
 
-    geolocationapi();
-  };
+  //   geolocationapi();
+  // };
 
-  async function geolocationapi() {
+  async function geolocationapi(e) {
     var requestOptions = {
       method: "GET",
       redirect: "follow",
@@ -41,13 +41,12 @@ function SearchMap() {
 
     try {
       const response = await fetch(
-        `https://nominatim.openstreetmap.org/search?q=${search}&format=json&addressdetails=1&polygon_geojson=0`,
+        `https://nominatim.openstreetmap.org/search?q=${e}&format=json&addressdetails=1&polygon_geojson=0`,
         requestOptions
       );
       const result = await response.json();
       setResponseList(result);
       setLoading(false);
-      console.log(result);
     } catch (error) {
       console.log("error", error);
     }
@@ -78,6 +77,23 @@ function SearchMap() {
     iconSize: [38, 38],
   });
 
+  const debounce = (fn, delay = 1000) => {
+    let timeout;
+    return (...args) => {
+      clearInterval(timeout);
+      timeout = setTimeout(() => {
+        fn(...args);
+      }, delay);
+    };
+  };
+
+  const handlechange = (e) => {
+    // setSearch(e.target.value);
+    geolocationapi(e.target.value);
+  };
+
+  const debounced = debounce(handlechange, 1000);
+
   return (
     // <div className="relative">
     <div className="relative h-screen w-full bg-red-400">
@@ -85,20 +101,18 @@ function SearchMap() {
         <div className=" rounded-lg bg-white p-4 shadow-2xl">
           <div className="flex gap-[1rem] ">
             <input
-              value={search}
-              onChange={(e) => {
-                setSearch(e.target.value);
-              }}
+              // value={search}
+              onChange={debounced}
               type="text"
               placeholder="Search any place in your mind..."
               className="w-full py-[7px] px-[1rem] rounded-lg border-2 border-gray-800"
             />
-            <button
+            {/* <button
               onClick={handleSubmit}
               className="rounded-md py-[7px] px-[1rem] bg-emerald-600 text-white"
             >
               {loading ? "Loading.." : "Submit"}
-            </button>
+            </button> */}
           </div>
         </div>
         {/* {responselist.length === 0 ? (
