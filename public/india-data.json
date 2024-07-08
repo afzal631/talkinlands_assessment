@@ -1,0 +1,126 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Taj Mahal",
+          "description": "A beautiful mausoleum located in Agra, built by Mughal Emperor Shah Jahan.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1200px-Taj_Mahal_%28Edited%29.jpeg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [78.0421, 27.1751]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Qutub Minar",
+          "description": "A UNESCO World Heritage Site in Delhi, known for its tall and intricately carved minaret.",
+          "image": "https://miro.medium.com/v2/resize:fit:976/1*bQ9GVko6ItmpgtoALHHc3A.jpeg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [77.1855, 28.5245]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Gateway of India",
+          "description": "A monumental arch in Mumbai, overlooking the Arabian Sea.",
+          "image": "https://afar.brightspotcdn.com/dims4/default/4242ba7/2147483647/strip/false/crop/1600x800+0+0/resize/1486x743!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2F16%2F85%2F5c8949c60685339973fd53c817b8%2Foriginal-a54d684d8b0a182dd8ca390be1e6d627.jpg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.8347, 18.922]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Hawa Mahal",
+          "description": "A palace in Jaipur known for its unique honeycomb structure.",
+          "image": "https://images.moneycontrol.com/static-mcnews/2023/04/pexels-ankur-bagai-6440428.jpg?impolicy=website&width=1600&height=900"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [75.8267, 26.9239]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Mysore Palace",
+          "description": "A historical palace in Mysore, known for its grandeur and architecture.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLyADkHVmysdaYefNY8J3KecQDfgvhkdlyqg&s"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [76.6551, 12.3051]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Amer Fort",
+          "description": "A majestic fort located in Amer, Rajasthan, known for its artistic style.",
+          "image": "https://i.ytimg.com/vi/QkBMI5m64uY/maxresdefault.jpg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [75.8513, 26.9855]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Charminar",
+          "description": "A mosque in Hyderabad, recognized for its four grand arches.",
+          "image": "https://media1.thrillophilia.com/filestore/myx0ziz9cm4ynnru0bhwacb66w86_shutterstock_1911230902.jpg?w=400&dpr=2"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [78.4747, 17.3616]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Red Fort",
+          "description": "A historic fort in Delhi, which served as the main residence of Mughal emperors.",
+          "image": "https://images.indianexpress.com/2018/06/red-fort-759-getty-images.jpg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [77.241, 28.6562]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Victoria Memorial",
+          "description": "A large marble building in Kolkata, dedicated to Queen Victoria.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Victoria_Memorial_situated_in_Kolkata.jpg/1200px-Victoria_Memorial_situated_in_Kolkata.jpg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [88.3426, 22.5448]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Meenakshi Temple",
+          "description": "A historic Hindu temple located in Madurai, known for its stunning architecture.",
+          "image": "https://www.abhibus.com/blog/wp-content/uploads/2023/04/Madurai-Meenakshi-Temple-History-Timings-How-to-Reach.jpg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [78.119, 9.9194]
+        }
+      }
+    ]
+  }
+  
